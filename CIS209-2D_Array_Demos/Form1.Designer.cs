@@ -41,6 +41,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.lblJanSum = new System.Windows.Forms.Label();
+            this.lblFebSum = new System.Windows.Forms.Label();
+            this.lblMarSum = new System.Windows.Forms.Label();
+            this.lblItem1Sum = new System.Windows.Forms.Label();
+            this.lblItem2Sum = new System.Windows.Forms.Label();
+            this.lblTotalSales = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbx1J
@@ -157,11 +165,93 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "March";
             // 
+            // lblJanSum
+            // 
+            this.lblJanSum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblJanSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJanSum.Location = new System.Drawing.Point(77, 105);
+            this.lblJanSum.Name = "lblJanSum";
+            this.lblJanSum.Size = new System.Drawing.Size(74, 23);
+            this.lblJanSum.TabIndex = 13;
+            // 
+            // lblFebSum
+            // 
+            this.lblFebSum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblFebSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFebSum.Location = new System.Drawing.Point(157, 105);
+            this.lblFebSum.Name = "lblFebSum";
+            this.lblFebSum.Size = new System.Drawing.Size(74, 23);
+            this.lblFebSum.TabIndex = 14;
+            // 
+            // lblMarSum
+            // 
+            this.lblMarSum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMarSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarSum.Location = new System.Drawing.Point(237, 105);
+            this.lblMarSum.Name = "lblMarSum";
+            this.lblMarSum.Size = new System.Drawing.Size(74, 23);
+            this.lblMarSum.TabIndex = 15;
+            // 
+            // lblItem1Sum
+            // 
+            this.lblItem1Sum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblItem1Sum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblItem1Sum.Location = new System.Drawing.Point(329, 53);
+            this.lblItem1Sum.Name = "lblItem1Sum";
+            this.lblItem1Sum.Size = new System.Drawing.Size(74, 23);
+            this.lblItem1Sum.TabIndex = 16;
+            // 
+            // lblItem2Sum
+            // 
+            this.lblItem2Sum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblItem2Sum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblItem2Sum.Location = new System.Drawing.Point(329, 78);
+            this.lblItem2Sum.Name = "lblItem2Sum";
+            this.lblItem2Sum.Size = new System.Drawing.Size(74, 23);
+            this.lblItem2Sum.TabIndex = 17;
+            // 
+            // lblTotalSales
+            // 
+            this.lblTotalSales.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTotalSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalSales.Location = new System.Drawing.Point(329, 105);
+            this.lblTotalSales.Name = "lblTotalSales";
+            this.lblTotalSales.Size = new System.Drawing.Size(74, 23);
+            this.lblTotalSales.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(325, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 20);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Totals";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 108);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 20);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Totals";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 273);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblTotalSales);
+            this.Controls.Add(this.lblItem2Sum);
+            this.Controls.Add(this.lblItem1Sum);
+            this.Controls.Add(this.lblMarSum);
+            this.Controls.Add(this.lblFebSum);
+            this.Controls.Add(this.lblJanSum);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -176,7 +266,6 @@
             this.Controls.Add(this.tbx2M);
             this.Controls.Add(this.tbx1J);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +286,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblJanSum;
+        private System.Windows.Forms.Label lblFebSum;
+        private System.Windows.Forms.Label lblMarSum;
+        private System.Windows.Forms.Label lblItem1Sum;
+        private System.Windows.Forms.Label lblItem2Sum;
+        private System.Windows.Forms.Label lblTotalSales;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 

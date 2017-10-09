@@ -25,12 +25,56 @@ namespace CIS209_2D_Array_Demos
 
             int[,] intSales = new int[sales.GetLength(0), sales.GetLength(1)];
 
-            for (int i = 0; i < sales.GetLength(0); i++)
-                for (int j = 0; j < sales.GetLength(1); j++)
-                    intSales[i, j] = int.Parse(sales[i, j]);
+            int sumJanuary = 0;
+            int sumFebruary = 0;
+            int sumMarch = 0;
 
+            for (int i = 0; i < sales.GetLength(0); i++)
+            {
+                int sumRow = 0;
+
+                for (int j = 0; j < sales.GetLength(1); j++)
+                {
+                    intSales[i, j] = int.Parse(sales[i, j]);
+                    sumRow += intSales[i, j];
+                    switch(j)
+                    {
+                        case 0:
+                            sumJanuary += intSales[i, j];
+                            break;
+                        case 1:
+                            sumFebruary += intSales[i, j];
+                            break;
+                        case 2:
+                            sumMarch += intSales[i, j];
+                            break;
+                        default:
+                            MessageBox.Show("OOPS");
+                            break;
+                    } 
+                }
+
+                switch(i)
+                {
+                    case 0:
+                        lblItem1Sum.Text = sumRow.ToString();
+                        break;
+                    case 1:
+                        lblItem2Sum.Text = sumRow.ToString();
+                        break;
+                    default:
+                        MessageBox.Show("OOPS");
+                        break;
+                }
+            }
+            lblJanSum.Text = sumJanuary.ToString();
+            lblFebSum.Text = sumFebruary.ToString();
+            lblMarSum.Text = sumMarch.ToString();
+
+            int sum = 0;
             foreach (int each in intSales)
-                Console.WriteLine(each);
+                sum += each;
+            lblTotalSales.Text = sum.ToString();
         }
 
         private void btnQuit_Click(object sender, EventArgs e)
