@@ -19,9 +19,17 @@ namespace CIS209_2D_Array_Demos
 
         private void btnCalcTotals_Click(object sender, EventArgs e)
         {
-            string[,] sales = { { tbx1J.Text, tbx1F.Text, tbx1M.Text},
+
+            string [,] sales = { { tbx1J.Text, tbx1F.Text, tbx1M.Text},
                                 { tbx2J.Text, tbx2F.Text, tbx2M.Text}  };
-            foreach (string each in sales)
+
+            int[,] intSales = new int[sales.GetLength(0), sales.GetLength(1)];
+
+            for (int i = 0; i < sales.GetLength(0); i++)
+                for (int j = 0; j < sales.GetLength(1); j++)
+                    intSales[i, j] = int.Parse(sales[i, j]);
+
+            foreach (int each in intSales)
                 Console.WriteLine(each);
         }
 
