@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CIS209_2D_Array_Demos
@@ -37,8 +30,9 @@ namespace CIS209_2D_Array_Demos
                 {
                     intSales[i, j] = int.Parse(sales[i, j]);
                     sumRow += intSales[i, j];
-                    switch(j)
+                    switch (j)
                     {
+                        
                         case 0:
                             sumJanuary += intSales[i, j];
                             break;
