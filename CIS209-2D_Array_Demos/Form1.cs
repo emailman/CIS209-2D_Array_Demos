@@ -48,7 +48,8 @@ namespace CIS209_2D_Array_Demos
                     } 
                 }
 
-                switch(i)
+                // Write the row sums
+                switch (i)
                 {
                     case 0:
                         lblItem1Sum.Text = sumRow.ToString();
@@ -61,6 +62,8 @@ namespace CIS209_2D_Array_Demos
                         break;
                 }
             }
+
+            // Write the column sums 
             lblJanSum.Text = sumJanuary.ToString();
             lblFebSum.Text = sumFebruary.ToString();
             lblMarSum.Text = sumMarch.ToString();
